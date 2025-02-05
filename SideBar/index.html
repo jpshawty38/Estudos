@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>SideBar</title>
+</head>
+<body>
+    <nav id="sidebar">
+        <div id="sidebar_content">
+
+            <div id="user">
+                <i class='bx bxs-user' id="user_avatar"></i>
+                <p id="user_info">
+                    <span class="item-description">João</span>
+                    <span class="item-description"> Lorem ipsum</span>
+                </p>
+            </div>
+
+            <ul id="side_items">
+                <li class="side-item active">
+                    <a href="#">
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <span class="item-description">Dashboard</span>
+                    </a>
+                </li>
+            </ul>
+
+            <ul id="side_items">
+                <li class="side-item">
+                    <a href="#">
+                        <i class="fa-solid fa-user"></i>
+                        <span class="item-description">Usuários</span>
+                    </a>
+                </li>
+            </ul>
+
+            <ul id="side_items">
+                <li class="side-item">
+                    <a href="#">
+                        <i class="fa-solid fa-bell"></i>
+                        <span class="item-description">Notificações</span>
+                    </a>
+                </li>
+            </ul>
+
+            <ul id="side_items">
+                <li class="side-item">
+                    <a href="#">
+                        <i class="fa-solid fa-box"></i>
+                        <span class="item-description">Produtos</span>
+                    </a>
+                </li>
+            </ul>
+
+            <ul id="side_items">
+                <li class="side-item">
+                    <a href="#">
+                        <i class="fa-solid fa-image"></i>
+                        <span class="item-description">Imagens</span>
+                    </a>
+                </li>
+            </ul>
+
+
+            <ul id="side_items">
+                <li class="side-item">
+                    <a href="#">
+                        <i class="fa-solid fa-gear"></i>
+                        <span class="item-description">Configurações</span>
+                    </a>
+                </li>
+            </ul>
+
+            <button id="open_btn">
+                <i id="open_btn-icon" class="fa-solid fa-chevron-right"></i>
+            </button>
+
+        </div>
+
+        <div id="logout">
+            <button id="logout_btn">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span class="item-description">Logout</span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <h1>Teste</h1>
+    </main>
+    <script src="./src/script/script.js"></script>
+</body>
+</html>

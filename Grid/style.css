@@ -1,0 +1,81 @@
+*{
+    margin:0;
+    padding: 0;
+
+}
+
+/* ELEMENTOS PAI */
+
+/* Grid template columns - cada medida é equivalaente a o tamanho total de cada coluna
+entao se estiver 3 medidas, ex: "20px 20px 20px", serão 3 colunas com 20 px cada
+"auto" para tamanho automatico
+
+Grid template rows - refere-se ao tamanho de cada linha da coluna, seguindo o mesmo padrão
+do column
+
+FR (columns)- é usado visando a fração do espaço disponivel, 
+ex: se um container tem 900px e vamos utilizar a medida de "FR", "1fr" seria equivalente
+a 1 fração de 900px;
+
+Repeat (columns) - é usado para otimizar o codigo e deixar-lo mais limpo
+repeat (5, 200px) -'5' é o numero de colunas e '200px' o tamanho de cada uma 
+(as medidas podem ser alteradas) e os repeat podem ser utilizados juntos
+repeat (5, 200px) repeat (2, 1fr)
+
+
+minmax (columns) - refere-se ao tamanho minimo e maximo de cada coluna, podendo ser mesclado 
+com outras propriedsdes
+minmax(200px, 300px); - largura minima de 200px e maxima 300px
+
+gap (column e row)- espaçamento entre os itens
+
+
+align item, justify content, justify items, align content
+*/
+
+
+/* GRID TEMPLATE AREA
+
+SERVE PARA ORGANIZAR CADA AREA DA PAGINA 
+
+*/
+
+#container{
+    display:grid;
+    gap: 10px;
+    grid-template-areas: 
+    'header header'
+    'aside article'
+    'section section'
+    'footer footer'
+    ;
+}
+
+.item{
+    height: 300px;
+}
+
+header {
+    grid-area: header;
+    background-color: rgb(199, 199, 199);
+}
+
+aside{
+    grid-area: aside;
+    background-color: bisque;
+}
+
+article{
+    grid-area: article;
+    background-color: wheat;
+}
+
+section{
+    grid-area: section;
+    background-color: blueviolet;
+}
+
+footer{
+    grid-area: footer;
+    background-color: azure;
+}

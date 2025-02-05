@@ -1,0 +1,30 @@
+body {
+    background-color: #27272a;
+}
+
+
+/* flex direction, wrap flow 
+gap (espaçamento entre os items)*/
+.container {
+    display: flex;
+    background-color: #6366f1;
+    gap: 15px;
+    /* flex-wrap: wrap; */
+
+    /* row-gap: 100px;
+    column-gap: 30px; */
+    height: 600px;
+    /* justify-content: space-evenly; alinhar horizontalmente  */
+    /* align-items:center; alinhar verticalmente  */
+}
+
+.item {
+    width: 200px;
+    height: 200px;
+    background-color: #38bdf8;
+}
+
+.item-3 {
+    flex: 2 2 30px;
+    align-self: flex-end;
+}
